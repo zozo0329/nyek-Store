@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+/* 
+    HEADER SECTION
+*/
+/* 
+    TOP NAVBAR
+*/
+.top-navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 30px 5px 30px;
+  background-color: #f1f1f1;
+}
+.top-navbar ul {
+  list-style-type: none;
+}
+.top-navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+.top-navbar a:hover {
+  opacity: 0.6;
+}
+/* 
+    MAIN NAVBAR
+  */
+.navbar img {
+  height: 50px;
+  width: 50px;
+}
+.navbar {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 70px;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-family: Nunito;
+  font-weight: bold;
+  transition: 0.15s;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.navbar a:hover {
+  opacity: 0.6;
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon i {
+  font-size: 40px;
+}
+.menu-icon i:hover {
+  opacity: 0.6;
+}
+
+/* 
+    SAMPLE ITEM
+*/
+.sample-item {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sample-item img {
+  height: 700px;
+  width: 700px;
+}
+/* 
+    ITEM DESCRIPTION
+*/
+.item-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.item-description p {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 350;
+}
+.item-description h1 {
+  font-family: Bebas, sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+}
+.item-description button {
+  padding: 10px 15px 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  transition: 0.25s;
+}
+.item-description button:hover {
+  opacity: 0.8;
+}
+/* 
+    MQ FOR RESPONSIVE DESIGN
+*/
+@media (max-width: 700px) {
+  /* 
+        HEADER SECTION
+    */
+  .top-navbar {
+    display: none;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #181818b0;
+    padding: 0px;
+    overflow: hidden;
+  }
+  .navbar a {
+    color: white;
+  }
+  .navbar li {
+    padding: 30px;
+  }
+  .menu-icon {
+    display: flex;
+  }
+  #menuList {
+    transition: all 0.25s;
+  }
+  .sample-item {
+    flex-direction: column;
+    justify-items: center;
+  }
+  .sample-item img {
+    height: 100%;
+    width: 100%;
+  }
+  .item-description {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
